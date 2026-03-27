@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Servicio profesional de fotografía escolar para jardines, escuelas primarias y secundarias. Calidad de imagen y organización garantizada.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style_jobs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>FotoImageneX</title>
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="flex">
+            <a href="/"><h3 class="pr-font">FotoImageneX</h3></a>
+            <div class="div-link">
+                <li><a href="/" class="sc-font link-hover">Sobre nosotros</a></li>
+                <li><a href="/views/index.ejs/#trabajos" class="sc-font link-hover">Nuestros trabajos</a></li>
+            </div>
+        </nav>
+    </header>
+ <section class="header-img xv"></section>
+    <section class="section-divisor">
+        <h3 class="pr-font">Cumpleaños de quince</h3>
+        <p class="sc-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sunt ea? Cum nulla ipsum consequuntur hic. Cum quam architecto officiis inventore nisi harum consequuntur nam, incidunt laboriosam enim eum voluptatum!</p>
+    </section>
+
+    <section class="gallery">
+    <div class="grid-wrapper">
+        <div class="tall"><img src="/images/xv1.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv2.JPG" alt=""></div>
+        <div class="tall"><img src="/images/xv3.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv4.JPG" alt=""></div>
+        <div class="tall"><img src="/images/xv5.JPG" alt=""></div>
+        <div class="tall"><img src="/images/xv6.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv7.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv8.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv9.JPG" alt=""></div>
+        <div class="Xtall"><img src="/images/xv10.JPG" alt=""></div>
+    </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+<script src="/js/trabajos_logic.js"></script>
+</body>
+<%- include('../partials/footer.ejs') %>

@@ -1,0 +1,456 @@
+:root{
+    --primary-bg-color:rgb(0, 12, 29);
+    --primary-font:"Abril Fatface", serif;
+    --primary-bttn-color:rgba(0, 40, 95, 0.5);
+    --secondary-bttn-color: rgb(0, 39, 94);
+    --secondary-font:"Roboto";
+}
+
+*{
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--primary-bg-color);
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    z-index: 4;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    margin-right: .2em;
+}
+
+nav{
+    justify-content: space-around;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3em;
+    padding: 2em 0;
+    background-color: rgb(0, 9, 22);
+    z-index: 2;
+}
+
+header{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: .4;
+    z-index: 0;
+}
+
+button{
+    width: 100%;
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+input{
+    border: 0;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+textarea{
+    resize: none;
+    display: block;
+}
+
+select,
+button,
+select > option,
+input{
+    color: black;
+}
+
+form input,textarea,button,select{
+    width: 40vw;
+}
+
+form input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-bttn-color);
+    color: aliceblue;
+}
+form textarea{
+    color: aliceblue;
+    background: none;
+    border: 1px solid var(--secondary-bttn-color);
+}
+
+form select{
+    background: none;
+    border: 1px solid var(--secondary-bttn-color);
+    color: aliceblue;
+    padding: .2em;
+}
+
+form input:focus, select:focus, textarea:focus{
+    outline: none;
+}
+
+form button{
+    display: block;
+    margin-top: 5%;
+    padding: .2em;
+    background: none;
+    border: 1px solid var(--secondary-bttn-color);
+    color: aliceblue;
+}
+
+form button:hover, select:hover{
+    background-color: var(--secondary-bttn-color);
+}
+
+select *{
+    color: aliceblue;
+}
+
+.video-container{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top,rgba(0, 12, 29, 1) 0%, #00000000 100%);
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5%;
+}
+
+.presentation *{
+    z-index: 1;
+    opacity: .95;
+    align-items: center;
+}
+
+.centered{
+    text-align: center;
+}
+
+.presentation > div{
+    margin: 0 12em;
+}
+
+.presentation-div > :first-child {
+    font-size: 3em;
+}
+
+.presentation-div *{
+    text-align: center;
+}
+
+.form-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-presentation{
+    text-align: center;
+    font-size: 3em;
+}
+
+.pr-font {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sc-font{
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.separate{
+    margin: 10% 0 5% 0;
+}
+
+.card{
+    width: 100%;
+}
+
+
+.relative{
+    position: relative;
+}
+
+.card-image{
+    position: absolute;
+    width:100%;
+    left: 0;
+    top: -5em;
+    object-fit: cover;
+}
+
+.card-div{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.XV-card{
+    background-color: rgba(0, 0, 0, 0.808);
+}
+
+
+.card-div-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5%;
+    gap: 2em;
+    position: absolute;
+    bottom: -12em;
+}
+.card-div-info *{
+    z-index: 4;
+    opacity: 1;
+}
+
+.card-div-info h1{
+    opacity: .95;
+    border-right: 1px solid white;
+    padding-right: 5px;
+    text-align: right;
+}
+
+
+.section-title{
+    font-size: 3em;
+}
+
+
+.XV-image{
+    top: -8em;
+}
+
+.pr-button{
+    background-color: var(--primary-bttn-color);
+    color: aliceblue;
+    border-radius:10%;
+    padding: .1em;
+    margin-top: 1%;
+    border: none;
+}
+
+
+.sc-button{
+    background-color: var(--secondary-bttn-color);
+    color: var(--primary-bttn-color);
+    font-style: var(--primary-font);
+    border-radius: 10%;
+    padding: .1em;
+    border: none;
+}
+
+.div-link > li{
+    margin-right: .5em;
+}
+
+.link-hover:hover{
+    border-bottom: 1px solid aliceblue;
+}
+
+.section_divisor{
+    border-top: 1px solid aliceblue;
+    border-bottom: 1px solid aliceblue;
+    padding: 1em 0;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.nav{
+    background-color: rgb(0, 9, 22);
+    opacity: 1;
+    padding: 1em 0;
+    position: fixed;
+    z-index: 10;
+    transition: transform .2s;
+}
+
+
+.nav_hidden{
+    transform: translateY(-50px);
+    box-shadow: none;
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.aparecer{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* ===== CAROUSEL ===== */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 1000px;
+  position: relative;
+  margin: auto;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: aliceblue;
+  font-family: var(--primary-font);
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: .1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 768px){
+
+    .form-container{
+        display: none;
+    }
+
+    .presentation{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .presentation-div{
+        width: 100%;
+    }
+
+    .presentation-div h1{
+        font-size: 3rem;
+    }
+
+}
