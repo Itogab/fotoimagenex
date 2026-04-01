@@ -470,7 +470,7 @@ select *{
 
 /*RESPONSIVE DESIGN*/
 @media (max-width: 768px){
-
+    ::-webkit-scrollbar { display: none; }
     .presentation{
         justify-content: center;
         text-align: center;
