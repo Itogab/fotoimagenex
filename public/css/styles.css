@@ -1,3 +1,7 @@
+html{
+    overflow-x: hidden;
+}
+
 :root{
     --primary-bg-color:rgb(0, 12, 29);
     --primary-font:"Abril Fatface", serif;
@@ -16,6 +20,7 @@
 
 body{
     background-color: var(--primary-bg-color);
+    overflow-x: hidden;
 }
 
 a{
@@ -34,6 +39,11 @@ nav{
     justify-content: space-around;
 }
 
+
+img{
+    max-width: 100%;
+}
+
 footer{
     display: flex;
     flex-direction: row;
@@ -45,6 +55,12 @@ footer{
     z-index: 2;
 }
 
+footer .flex a{
+    width: fit-content;
+}
+
+
+
 header{
     display: block;
     position: absolute;
@@ -53,12 +69,9 @@ header{
 }
 
 video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
     object-fit: cover;
+    width: 100%;
+    height: 100vh;
     opacity: .4;
     z-index: 0;
 }
@@ -92,7 +105,7 @@ input{
 }
 
 form input,textarea,button,select{
-    width: 40vw;
+    width: 70vw;
 }
 
 form input{
@@ -105,6 +118,8 @@ form textarea{
     color: aliceblue;
     background: none;
     border: 1px solid var(--secondary-bttn-color);
+    height: 15vh;
+    padding: .5rem;
 }
 
 form select{
@@ -142,6 +157,7 @@ select *{
 }
 
 .overlay{
+    text-align: center;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -150,12 +166,17 @@ select *{
     background: linear-gradient(to top,rgba(0, 12, 29, 1) 0%, #00000000 100%);
 }
 
+
 .presentation{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     padding: 0 5%;
+}
+
+.hero{
+    position: relative;
 }
 
 .presentation *{
@@ -178,6 +199,16 @@ select *{
 
 .presentation-div *{
     text-align: center;
+}
+
+.presentation-div{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 5%;
 }
 
 .form-container{
@@ -217,6 +248,10 @@ select *{
 
 .card{
     width: 100%;
+}
+
+.icon{
+    width: 2rem;
 }
 
 
@@ -306,8 +341,8 @@ select *{
     border-top: 1px solid aliceblue;
     border-bottom: 1px solid aliceblue;
     padding: 1em 0;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .nav{
@@ -436,21 +471,37 @@ select *{
 /*RESPONSIVE DESIGN*/
 @media (max-width: 768px){
 
-    .form-container{
-        display: none;
-    }
-
     .presentation{
         justify-content: center;
         text-align: center;
     }
 
-    .presentation-div{
-        width: 100%;
+    .section-title{
+        font-size: 2rem;
+    }
+    
+    .card-div-info-text{
+        display: none;
     }
 
-    .presentation-div h1{
-        font-size: 3rem;
+    .card-div-info{
+        top: -8rem;
+
     }
 
+    .card-div-info h1{
+        font-size: 1.3rem;
+    }
+
+    footer, .nav{
+        padding: 1rem;
+    }
+
+    footer div h1{
+        font-size: 1.3rem;
+    }
+
+    footer div h1{
+        font-size: 1.3rem;
+    }
 }

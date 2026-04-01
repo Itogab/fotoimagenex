@@ -116,6 +116,10 @@ section{
 }
 
 
+.icon{
+    width: 2rem;
+}
+
 
 .sc-font{
   font-family: "Fira Sans", sans-serif;
@@ -133,6 +137,8 @@ section{
     padding-bottom: 2rem;
     margin-top: 4rem;
     text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .section-divisor * {
@@ -290,3 +296,47 @@ section{
 
 .prev{ right: 45%; }
 .next{ left: 45%; }
+
+@media (max-width: 768px){
+
+    .gallery{
+        padding: 0;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+    
+    .card-div-info-text{
+        display: none;
+    }
+
+    .card-div-info{
+        top: -8rem;
+
+    }
+
+    .card-div-info h1{
+        font-size: 1.3rem;
+    }
+
+    footer, .nav{
+        padding: 1rem;
+    }
+
+    .section-divisor{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    footer div h1{
+        font-size: 1.3rem;
+    }
+
+    footer div h1{
+        font-size: 1.3rem;
+    }
+}
