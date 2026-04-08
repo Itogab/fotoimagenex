@@ -63,6 +63,14 @@ app.post("/send-email", (req,res) => {
             console.log('Email sent: ', info.response);
             res.send('Email sent successfully!')
         }
+    });
+
+    transporter.verify((err, success) => {
+        if (err){
+            console.error("SMTP ERROR: ", err);
+        }else{
+            console.log("SMTP READY");
+        }
     })
 })
 
