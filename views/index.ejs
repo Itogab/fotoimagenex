@@ -89,15 +89,15 @@
     <h1 class="pr-font section-title">¡PEDÍ TU PRESUPUESTO!</h1>
 </section>
 <div class="flex form-container">
-    <form action="/" method="post">
+    <form action="/send-email" method="POST">
         <label for="name" class="sc-font">Nombre completo</label>
-        <input type="text" name="" id="" required>
+        <input type="text" name="name" id="" required>
         <label for="phone" class="sc-font">Teléfono</label>
-        <input type="tel" name="" id="" required>
+        <input type="tel" name="phone" id="" required>
         <label for="email" class="sc-font">Mail</label>
-        <input type="tel" name="" id="" required>
+        <input type="email" name="email" id="" required>
         <label for="message" class="sc-font">Selecciona tu interés</label>
-        <select required name="" id="">
+        <select required name="option" id="">
             <option value="">Presione aquí</option>
             <option value="">Cumpleaños de 15</option>
             <option value="">Casamiento</option>
@@ -106,7 +106,7 @@
             <option value="">Book de fotos</option>
         </select>
         <label for="message" class="sc-font">Contanos los detalles!</label>
-        <textarea name="" id=""></textarea>
+        <textarea name="message" id=""></textarea>
         <button type="submit" class="sc-font">Enviar</button>
     </form>
 </div>
