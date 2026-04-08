@@ -297,6 +297,10 @@ section{
 .prev{ right: 45%; }
 .next{ left: 45%; }
 
+.overlay h1{
+    font-size: 5rem;
+}
+
 @media (max-width: 768px){
 
     .gallery{
