@@ -33,10 +33,12 @@ app.post("/send-email", (req,res) => {
     const {name, phone, email, message} = req.body;
 
     const transporter = nodemailer.createTransport({
-        service:'gmail',
+        host: process.env.SMTP_HOST,
+        port:process.env.SMTP_PORT,
+        secure:false,
         auth: {
-            user:process.env.GMAIL_USER,
-            pass:process.env.GMAIL_PASS
+            user:process.env.SMTP_USER,
+            pass:process.env.SMTP_PASS
         }
     })
 
