@@ -88,3 +88,16 @@ window.addEventListener("scroll", () => {
 
   lastScrollY = window.scrollY
 });
+
+//DROPDOWN MENU
+
+let menu = document.querySelector('.menu-icon');
+
+menu.addEventListener("click", () => {
+  let dropdown = document.querySelector('.dropdown-menu');
+  if (dropdown.classList.contains("disabled")){
+    dropdown.classList.remove("disabled")
+  }else{
+    dropdown.classList.add("disabled")
+  }
+})

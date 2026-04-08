@@ -117,7 +117,8 @@ section{
 
 
 .icon{
-    width: 2rem;
+    width: 1.5rem;
+    align-self: center;
 }
 
 
@@ -282,6 +283,14 @@ section{
     color: white;
 }
 
+.disabled{
+    display: none;
+}
+
+.enabled{
+    display:block;
+}
+
 .lightbox .prev,
 .lightbox .next{
     position: absolute;
@@ -310,37 +319,73 @@ section{
         font-size: 2rem;
     }
     
+       ::-webkit-scrollbar { display: none; }
+    .presentation{
+        justify-content: center;
+        text-align: center;
+    }
+    nav{
+        justify-content: space-between;
+    }
+
+    .section-title{
+        font-size: 2rem;
+    }
+    
     .card-div-info-text{
         display: none;
     }
 
-    .card-div-info{
-        top: -8rem;
-
-    }
-
     .card-div-info h1{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        text-align: center;
+        border: none;
+    }
+    .card-div-info{
+        gap: .1rem;
+        flex-direction: column;
     }
 
     footer, .nav{
         padding: 1rem;
     }
 
+    footer div h1{
+        font-size: 1.3rem;
+    }
+
+    footer div h1{
+        font-size: 1.3rem;
+    }
+
+    .div-link{
+        text-align: right;
+    }
+    .div-link > li{
+        display: none;
+    }
+
+    .dropdown-menu{
+        height: 100vh;
+        background-color: rgb(0, 9, 22);
+        position: absolute;
+        text-align: left;
+        width: 30%;
+        right: 0;
+        padding: 1em;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .dropdown-menu * {
+        margin-bottom: .5em;
+    }
+
+
     .section-divisor{
         padding: 0;
-        margin: 0;
-        text-align: center;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
-    footer div h1{
-        font-size: 1.3rem;
-    }
-
-    footer div h1{
-        font-size: 1.3rem;
+        margin: 4rem 2rem;
     }
 }
